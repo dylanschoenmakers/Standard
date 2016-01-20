@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{{ content.title|default }}{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <style>
+        body {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+<h1>Opifer Cms Standard</h1>
+
+{% block body %}
+    <h2>Placeholder 0</h2>
+    {{ render_placeholder() }}
+{% endblock body %}
+
+
+<div>
+    <h2>Placeholder 1</h2>
+    {{ render_placeholder(1) }}
+</div>
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>

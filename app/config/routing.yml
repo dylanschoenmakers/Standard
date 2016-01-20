@@ -1,0 +1,6 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+opifer_cms:
+    resource: '@OpiferCmsBundle/Resources/config/routing/routing.yml'
