@@ -2450,8 +2450,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Opifer/Cms/zipball/da9133e4ddb11c086a2db196875693aea19c96ca",
-                "reference": "da9133e4ddb11c086a2db196875693aea19c96ca",
+                "url": "https://api.github.com/repos/Opifer/Cms/zipball/d80f6d8fd9e88a7735363d2a2ba49052ff976d9a",
+                "reference": "d80f6d8fd9e88a7735363d2a2ba49052ff976d9a",
                 "shasum": ""
             },
             "require": {
@@ -2514,7 +2514,7 @@
                 }
             ],
             "description": "Opifer Cms Core",
-            "time": "2016-03-30 08:43:00"
+            "time": "2016-03-30 09:01:18"
         },
         {
             "name": "opifer/revisions",
@@ -3854,12 +3854,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "df01f06a8539272266f0d6437e49c1272dfd81b2"
+                "reference": "8ca43b076046d14aa2dd9dc2d9ec08fd277a7a51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/df01f06a8539272266f0d6437e49c1272dfd81b2",
-                "reference": "df01f06a8539272266f0d6437e49c1272dfd81b2",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/8ca43b076046d14aa2dd9dc2d9ec08fd277a7a51",
+                "reference": "8ca43b076046d14aa2dd9dc2d9ec08fd277a7a51",
                 "shasum": ""
             },
             "require": {
@@ -3976,7 +3976,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-03-27 14:32:56"
+            "time": "2016-03-30 10:37:34"
         },
         {
             "name": "twig/extensions",

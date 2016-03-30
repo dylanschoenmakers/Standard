@@ -5,16 +5,16 @@
 - name: copy composer config
   copy: src={{ composer_config }} dest=/vagrant/.composer/config.json force=yes
 
-- name: copy private ssh key
-  copy: src={{ ssh_key}} dest=/var/www/.ssh/id_rsa owner=www-data group=www-data mode=0600
-  become: yes
-
 - name: copy private ssh key root
   copy: src={{ ssh_key }} dest=/root/.ssh/id_rsa owner=root group=root mode=0600
   become: yes
 
+- name: copy private ssh key
+  copy: src={{ ssh_key }} dest={{ user_home }}/.ssh/id_rsa owner={{ user }} group={{ user }} mode=0600
+  become: yes
+
 - name: copy ssh config
-  template: src=ssh_config dest=/var/www/.ssh/config owner=www-data group=www-data mode=0644
+  template: src=ssh_config dest={{ user_home }}/.ssh/config owner={{ user }} group={{ user }} mode=0644
   become: yes
 
 - name: install npm modules
