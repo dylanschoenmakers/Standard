@@ -9,25 +9,23 @@
     "packages": [
         {
             "name": "apy/datagrid-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
+            "target-dir": "APY/DataGridBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/APY/APYDataGridBundle.git",
-                "reference": "a9a496144c4182fb21e1de75bd05338b936c160b"
+                "reference": "d9ef2ebd7d5e64a1a7267099fbf7f6ed874a9246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/APY/APYDataGridBundle/zipball/a9a496144c4182fb21e1de75bd05338b936c160b",
-                "reference": "a9a496144c4182fb21e1de75bd05338b936c160b",
+                "url": "https://api.github.com/repos/APY/APYDataGridBundle/zipball/d9ef2ebd7d5e64a1a7267099fbf7f6ed874a9246",
+                "reference": "d9ef2ebd7d5e64a1a7267099fbf7f6ed874a9246",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "symfony/symfony": "~2.3",
+                "symfony/symfony": ">=2.0.0",
                 "twig/twig": ">=1.5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.1.1"
             },
             "suggest": {
                 "PHPExcel": "Export the grid (Excel, HTML or PDF)",
@@ -41,14 +39,11 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "APY\\DataGridBundle\\": ""
+                "psr-0": {
+                    "APY\\DataGridBundle": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
             "authors": [
                 {
                     "name": "Stanislav Turza",
@@ -69,7 +64,7 @@
                 "datagrid",
                 "symfony"
             ],
-            "time": "2016-03-14 09:09:33"
+            "time": "2014-01-22 19:49:30"
         },
         {
             "name": "aws/aws-sdk-php",
@@ -2455,12 +2450,12 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Opifer/Cms/zipball/ff16c7d2937551d7d91417c6ff3cd9e822d1e47e",
-                "reference": "ff16c7d2937551d7d91417c6ff3cd9e822d1e47e",
+                "url": "https://api.github.com/repos/Opifer/Cms/zipball/75da3400ae2c9dcaeb7bf933680977057bcfc2ca",
+                "reference": "75da3400ae2c9dcaeb7bf933680977057bcfc2ca",
                 "shasum": ""
             },
             "require": {
-                "apy/datagrid-bundle": "dev-master@dev",
+                "apy/datagrid-bundle": "~2.2",
                 "aws/aws-sdk-php": "2.5.*",
                 "braincrafted/bootstrap-bundle": "2.1.0",
                 "doctrine/doctrine-bundle": "~1.2",
@@ -2487,6 +2482,7 @@
                 "symfony/swiftmailer-bundle": "~2.3",
                 "symfony/symfony": "~2.8|~3.0",
                 "twig/extensions": "~1.2",
+                "twig/twig": "~1.23",
                 "willdurand/js-translation-bundle": "~2.2"
             },
             "replace": {
@@ -2519,7 +2515,7 @@
                 }
             ],
             "description": "Opifer Cms Core",
-            "time": "2016-03-30 12:15:24"
+            "time": "2014-07-31 06:47:42"
         },
         {
             "name": "opifer/revisions",
@@ -4037,21 +4033,20 @@
         },
         {
             "name": "twig/twig",
-            "version": "dev-master",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "2ed184ec2df1c05eb1935b13b01280965bd2c856"
+                "reference": "f0a4fa678465491947554f6687c5fca5e482f8ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/2ed184ec2df1c05eb1935b13b01280965bd2c856",
-                "reference": "2ed184ec2df1c05eb1935b13b01280965bd2c856",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f0a4fa678465491947554f6687c5fca5e482f8ec",
+                "reference": "f0a4fa678465491947554f6687c5fca5e482f8ec",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5",
-                "symfony/polyfill-mbstring": "~1.0"
+                "php": ">=5.2.7"
             },
             "require-dev": {
                 "symfony/debug": "~2.7",
@@ -4060,7 +4055,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "1.24-dev"
                 }
             },
             "autoload": {
@@ -4095,7 +4090,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-01-31 08:00:54"
+            "time": "2016-01-29 10:45:45"
         },
         {
             "name": "willdurand/js-translation-bundle",
