@@ -1,4 +1,0 @@
-#!/bin/bash
-sudo setfacl -dR -m u:vagrant:rwx -m u:www-data:rwx /dev/shm/symfony/cache /dev/shm/symfony/logs
-sudo setfacl -R -m u:vagrant:rwx -m u:www-data:rwx /dev/shm/symfony/cache /dev/shm/symfony/logs
-exit 0;

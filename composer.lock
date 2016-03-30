@@ -2450,8 +2450,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Opifer/Cms/zipball/f878941e01cf3247eefb165ecd6f4eef0680672a",
-                "reference": "f878941e01cf3247eefb165ecd6f4eef0680672a",
+                "url": "https://api.github.com/repos/Opifer/Cms/zipball/da9133e4ddb11c086a2db196875693aea19c96ca",
+                "reference": "da9133e4ddb11c086a2db196875693aea19c96ca",
                 "shasum": ""
             },
             "require": {
@@ -2514,7 +2514,7 @@
                 }
             ],
             "description": "Opifer Cms Core",
-            "time": "2016-03-30 08:13:08"
+            "time": "2016-03-30 08:43:00"
         },
         {
             "name": "opifer/revisions",
