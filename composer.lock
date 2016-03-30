@@ -2445,13 +2445,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:Opifer/cms.git",
-                "reference": "75da3400ae2c9dcaeb7bf933680977057bcfc2ca"
+                "url": "https://github.com/Opifer/Cms.git",
+                "reference": "270d573466c0030acefcfc75a6d2bf4d39720aac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Opifer/Cms/zipball/75da3400ae2c9dcaeb7bf933680977057bcfc2ca",
-                "reference": "75da3400ae2c9dcaeb7bf933680977057bcfc2ca",
+                "url": "https://api.github.com/repos/Opifer/Cms/zipball/270d573466c0030acefcfc75a6d2bf4d39720aac",
+                "reference": "270d573466c0030acefcfc75a6d2bf4d39720aac",
                 "shasum": ""
             },
             "require": {
@@ -2514,8 +2514,8 @@
                     "email": "info@opifer.nl"
                 }
             ],
-            "description": "Symfony based CMS",
-            "time": "2016-03-30 12:00:42"
+            "description": "Opifer Cms Core",
+            "time": "2016-03-30 14:32:23"
         },
         {
             "name": "opifer/revisions",
