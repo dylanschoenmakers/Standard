@@ -4,7 +4,7 @@
 parameters:
     database_host:     127.0.0.1
     database_port:     ~
-    database_name:     symfony
+    database_name:     application
     database_user:     root
     database_password: ~
     # You should uncomment this if you want use pdo_sqlite
@@ -18,7 +18,7 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
-    domain: vagrant.dev
+    domain: opifer.dev
     amazon_s3_key: null
     amazon_s3_secret: null
     amazon_s3_region: null

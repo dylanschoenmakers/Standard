@@ -1,0 +1,6 @@
+---
+- name: provisioning vagrant
+  hosts: vagrant
+
+  roles:
+    - devel

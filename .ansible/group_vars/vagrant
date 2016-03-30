@@ -1,0 +1,6 @@
+---
+app_name: opifer
+app_domain: opifer.dev
+app_dir: /vagrant
+ssh_key: ~/.ssh/id_rsa
+composer_config: ~/.composer/config.json

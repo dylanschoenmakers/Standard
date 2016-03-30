@@ -13,7 +13,5 @@
 /bin/
 /composer.phar
 
-.ansible
 .idea
 .vagrant
-Vagrantfile

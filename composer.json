@@ -1,6 +1,6 @@
 {
     "name": "opifer/standard",
-    "license": "proprietary",
+    "license": "MIT",
     "type": "project",
     "autoload": {
         "psr-4": {
@@ -13,10 +13,7 @@
     },
     "require": {
         "php": ">=5.3.9",
-        "opifer/cms": "@dev",
-        "friendsofsymfony/user-bundle": "~2.0@dev",
-        "doctrine/migrations": "~1.0@dev",
-        "knplabs/knp-gaufrette-bundle": "*@dev"
+        "opifer/cms": "dev-master@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",
@@ -42,6 +39,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
         ]
     },
+    "minimum-stability": "dev",
     "config": {
         "bin-dir": "bin"
     },

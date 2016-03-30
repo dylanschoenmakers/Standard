@@ -1,0 +1,4 @@
+Host bitbucket.org
+    StrictHostKeyChecking no
+    IdentityFile /var/www/.ssh/id_rsa
+    UserKnownHostsFile /dev/null

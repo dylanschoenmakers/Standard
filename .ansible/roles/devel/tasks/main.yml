@@ -1,0 +1,50 @@
+---
+- name: copy composer config
+  file: path=/vagrant/.composer state=directory
+
+- name: copy composer config
+  copy: src={{ composer_config }} dest=/vagrant/.composer/config.json force=yes
+
+- name: copy private ssh key
+  copy: src={{ ssh_key}} dest=/var/www/.ssh/id_rsa owner=www-data group=www-data mode=0600
+  become: yes
+
+- name: copy private ssh key root
+  copy: src={{ ssh_key }} dest=/root/.ssh/id_rsa owner=root group=root mode=0600
+  become: yes
+
+- name: copy ssh config
+  template: src=ssh_config dest=/var/www/.ssh/config owner=www-data group=www-data mode=0644
+  become: yes
+
+- name: install npm modules
+  local_action: command npm update
+
+- name: create virtual host file
+  template: src=virtualhost.conf dest=/etc/apache2/sites-available/{{ app_name }}.conf
+  become: yes
+  notify:
+    - reload apache2
+
+- name: a2ensite {{ app_name }}
+  command: a2ensite {{ app_name }}
+  args:
+    creates: /etc/apache2/sites-enabled/{{ app_name }}.conf
+  become: yes
+  notify:
+    - reload apache2
+
+- name: composer install
+  command: php -d memory_limit=-1 /usr/local/bin/composer install --no-interaction
+  args:
+    chdir: /vagrant
+
+- name: set permissions
+  command: /vagrant/.ansible/setperms
+  become: yes
+
+- name: install schema
+  command: /vagrant/app/console doctrine:schema:create
+
+- name: create default fos user
+  command: /vagrant/app/console fos:user:create admin support@opifer.nl vagrant --super-admin
