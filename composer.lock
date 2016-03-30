@@ -2446,7 +2446,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:Opifer/cms.git",
-                "reference": "9b3a084f5c9da231a5ef3d14fcb2788fedf2d9bc"
+                "reference": "75da3400ae2c9dcaeb7bf933680977057bcfc2ca"
             },
             "dist": {
                 "type": "zip",
@@ -2514,8 +2514,8 @@
                     "email": "info@opifer.nl"
                 }
             ],
-            "description": "Opifer Cms Core",
-            "time": "2014-07-31 06:47:42"
+            "description": "Symfony based CMS",
+            "time": "2016-03-30 12:00:42"
         },
         {
             "name": "opifer/revisions",
